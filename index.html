@@ -35,34 +35,83 @@
         margin-top: 10px;
         margin-left: 16px;
     }
+    li{
+        margin-bottom: 5px;
+    }
     .container{
         display:grid;
         grid-gap:20px;
-        grid-template-columns: repeat(2,3fr);
+        grid-template-columns: repeat(5,1fr);
+    }
     .item1{
+        grid-column: span 2;
+        grid-row: span 2;
+        margin-top: 50px;
 
     }
+    .item2{
+        grid-column: span 3;
+        grid-row: span 2;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+
     }
+    .item3{
+        grid-column: span 2;
+        grid-row: span 4;
+        margin-left: 15px;
+  
+        }
+    .item4{
+        grid-column: span 3;
+       	grid-row: span 2;
+
+   
+        }
+
 </style> 
 
 <body>
     <h1>Welcome to MyPage</h1>
     <p><b>A page where you get to know me!</bb></p>
     <hr>
-    <center><button>Welcome</button><button>About Me</button><button>Projects</button><button>Future</button></center> 
+    <center><button>About Me</button><button>Projects</button><button>Future</button></center> 
     <hr>
 </body>
 
 <body>
     <div class="container">
-        <div class="item"> Item 1 </div>
-        <div class="item2"> Item 2 </div>
-        <div class="item3"> Item 3 </div>
-        <div class="item4"> Item 4 </div>
-        <div class="item5"> Item 5 </div>
-        <div class="item6"> Item 6 </div>
-    </div>
 
-    <img src="https://ca.pinterest.com/pin/1023161609107886027/" width="250" height="250">
+        <div class="item1"> <img src="https://i.redd.it/pnf6ndljzby81.jpg" width="250" height="150"> </div>
+
+        <div class="item2"> 
+            <center><h3>My favorite Games:</h3></center>
+             <hr> 
+             <ul>
+                <li>Life Is Strange</li>
+                <li>Hollow Knight</li>
+                <li>The last of us part 2</li>
+                <li>Ultrakill</li>
+                <li>Omori</li>
+            </ul> 
+        </div>
+
+        <div class="item3">  
+        	<center><h3>My favorite Songs:</h3></center>
+            <hr>
+            <ul>
+                <li>Life Is Strange</li> 
+                <li>Hollow Knight</li>
+                <li>The last of us part 2</li>
+
+            </ul> 
+        </div> 
+
+        <div class="item4">
+            <center><p>Fun Fact: the first game I was first interested in was BOTW:</p></center>
+            <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_EBRuYUM_2fN4asM_PyvF4vNQL1Q6sDVnX-3FD-O6bDunqPl0UQhexrQXjE0NuUVaLoeDscac-lVp1bfObyly8a_20IZFEft20Yqhw&s=10" width="300" height="210"></center>
+            
+        </div>
 </body>
 </html>
